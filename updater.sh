@@ -1,0 +1,36 @@
+#!/bin/bash
+set -e
+
+function findLaunchConfig(){    
+    _lc=$(aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names $1 --query AutoScalingGroups[*].LaunchConfigurationName --output text)
+    echo $_lc
+}
+
+
+
+
+_file_name=$1
+if [ $# -gt 0 ] &&  [ -f "$_file_name" ];then
+    source $1
+
+
+    launch_configuration=$(findLaunchConfig $AUTO_SCALING_GROUP)
+    echo "=== $launch_configuration"
+
+    echo "1.Find LaunchConfig"
+
+
+    echo "2. Find Ami in Launch Config"
+
+
+    echo "3--- RUN PACKER and Fetch Id of new AMI----"
+    echo "Pass a script to packer."
+
+
+    echo "Create a new Launch config which is copy of existing launch config. but only AMI is updated"
+
+else
+    echo "Usage updater.sh <filename>"
+fi
+
+
