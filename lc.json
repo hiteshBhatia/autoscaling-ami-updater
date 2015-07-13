@@ -1,0 +1,32 @@
+        {
+        "UserData": "IyEvYmluL2Jhc2gKCnN1ZG8gczNjbWQgZ2V0IC0tZm9yY2UgczM6Ly9jb20uc29ueWxpdi51c2VyZGF0YS9yZXBsaWNhL2N1c3RvbS1pbml0LXNjcmlwdC5zaCAvaG9tZS91YnVudHUvY3VzdG9tLWluaXQtc2NyaXB0LnNoCnN1ZG8gY2htb2QgNzc1IC9ob21lL3VidW50dS9jdXN0b20taW5pdC1zY3JpcHQuc2gKYmFzaCAvaG9tZS91YnVudHUvY3VzdG9tLWluaXQtc2NyaXB0LnNoCgo=", 
+        "EbsOptimized": false, 
+        "LaunchConfigurationARN": "arn:aws:autoscaling:ap-southeast-1:914457952178:launchConfiguration:f1bf9292-0c84-4a19-a14e-b591c88a0879:launchConfigurationName/sharad", 
+        "InstanceMonitoring": {
+        "Enabled": true
+        }, 
+        "ClassicLinkVPCSecurityGroups": [], 
+        "CreatedTime": "2015-06-16T07:13:03.955Z", 
+        "BlockDeviceMappings": [
+        {
+            "DeviceName": "/dev/sda1", 
+            "Ebs": {
+                "DeleteOnTermination": true, 
+                "VolumeSize": 50, 
+                "VolumeType": "gp2"
+            }
+        }, 
+        {
+            "DeviceName": "/dev/sdb", 
+            "VirtualName": "ephemeral0"
+        }
+        ], 
+        "KeyName": "SonyLiv-1.5", 
+        "SecurityGroups": "sg-6a5e8a0f",
+        "LaunchConfigurationName": "Replica-Architecture-SonyLIV-1.5.0", 
+        "KernelId": "", 
+        "RamdiskId": "", 
+        "ImageId": "ami-26abae74", 
+        "InstanceType": "m3.xlarge", 
+        "AssociatePublicIpAddress": true
+        }

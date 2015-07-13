@@ -1,0 +1,30 @@
+{
+    "ImageId": "ami-26abae74", 
+    "KeyName": "SonyLiv-1.5", 
+    "SecurityGroups": [
+        "sg-6a5e8a0f"
+    ], 
+    "UserData": "IyEvYmluL2Jhc2gKCnN1ZG8gczNjbWQgZ2V0IC0tZm9yY2UgczM6Ly9jb20uc29ueWxpdi51c2VyZGF0YS9yZXBsaWNhL2N1c3RvbS1pbml0LXNjcmlwdC5zaCAvaG9tZS91YnVudHUvY3VzdG9tLWluaXQtc2NyaXB0LnNoCnN1ZG8gY2htb2QgNzc1IC9ob21lL3VidW50dS9jdXN0b20taW5pdC1zY3JpcHQuc2gKYmFzaCAvaG9tZS91YnVudHUvY3VzdG9tLWluaXQtc2NyaXB0LnNoCgo=", 
+    "InstanceType": "m3.xlarge", 
+
+"BlockDeviceMappings": [
+        {
+            "DeviceName": "/dev/sda1", 
+            "Ebs": {
+                "DeleteOnTermination": true, 
+                "VolumeSize": 50, 
+                "VolumeType": "gp2"
+            }
+        },
+	{
+            "DeviceName": "/dev/sdb", 
+            "VirtualName": "ephemeral0"
+        }
+        ],
+
+    "InstanceMonitoring": {
+        "Enabled": true
+    }, 
+    "EbsOptimized": true, 
+    "AssociatePublicIpAddress": true
+}
